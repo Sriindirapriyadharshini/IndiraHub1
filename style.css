@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fff8f3;
+    color: #32152d;
+    line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+    width: 100%;
+    padding: 18px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(
+        90deg,
+        #f8d7e8,
+        #f4e4f7,
+        #dfe7fa
+    );
+
+    border-bottom: 2px solid #e8c4d8;
+    box-shadow: 0 3px 15px rgba(80, 30, 70, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #651b40;
+    text-decoration: none;
+}
+
+nav div {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #542044;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #a83268;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            rgba(255, 235, 245, 0.85),
+            rgba(235, 225, 250, 0.9)
+        );
+
+    border-bottom: 1px solid #ead3e4;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #571c40;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #76536c;
+    margin-bottom: 25px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 13px 28px;
+
+    background: linear-gradient(
+        135deg,
+        #7b2450,
+        #a83268
+    );
+
+    color: white;
+    text-decoration: none;
+
+    border-radius: 25px;
+    font-weight: bold;
+
+    box-shadow: 0 6px 15px rgba(100, 30, 70, 0.2);
+}
+
+.hero-button:hover {
+    transform: translateY(-2px);
+}
+
+/* ================= SECTION ================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    color: #5b1c42;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #866276;
+    margin-bottom: 40px;
+}
+
+/* ================= BOOK GRID ================= */
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+/* ================= BOOK CARD ================= */
+
+.product-card {
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(80, 30, 70, 0.10);
+
+    border: 1px solid #ecd9e7;
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(80, 30, 70, 0.18);
+}
+
+/* ================= IMAGE ================= */
+
+.product-image-wrap {
+    width: 100%;
+    height: 330px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #f5ddec,
+        #e5ddf5
+    );
+
+    padding: 25px;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+
+    filter: drop-shadow(
+        0 8px 8px rgba(0, 0, 0, 0.18)
+    );
+}
+
+/* ================= BOOK DETAILS ================= */
+
+.product-info {
+    padding: 22px;
+}
+
+.category {
+    color: #a83268;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 8px;
+}
+
+.product-title {
+    font-size: 23px;
+
+    color: #35152f;
+
+    margin-bottom: 8px;
+}
+
+.author {
+    color: #806078;
+
+    font-size: 15px;
+
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #66505f;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+/* ================= PRICE ================= */
+
+.price {
+    font-size: 22px;
+
+    color: #8b214e;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+/* ================= BUTTON ================= */
+
+.add-button {
+    display: block;
+
+    width: 100%;
+
+    padding: 12px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #731e48,
+        #a83268
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.add-button:hover {
+    background: #571536;
+
+    transform: translateY(-2px);
+}
+
+/* ================= QUOTE ================= */
+
+.quote {
+    margin-top: 60px;
+
+    padding: 55px 30px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #f6dce9,
+        #e8ddf6
+    );
+
+    border-radius: 20px;
+}
+
+.quote p {
+    font-size: 27px;
+
+    font-style: italic;
+
+    color: #5d284d;
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 50px;
+}
+
+.feature {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    border: 1px solid #ead7e4;
+
+    box-shadow: 0 6px 20px rgba(80, 30, 70, 0.08);
+}
+
+.feature h3 {
+    color: #70204b;
+
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #756071;
+
+    font-size: 14px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    margin-top: 70px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    background: #35152f;
+
+    color: #f8e9f1;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav div {
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 55px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
